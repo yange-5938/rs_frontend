@@ -95,6 +95,11 @@ export default function UI_PAUL() {
                   }}
                   noValidate
                   autoComplete="off"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
                   <TextField
                     id="outlined-basic"
@@ -129,21 +134,24 @@ export default function UI_PAUL() {
                 <Box
                   component="form"
                   sx={{
-                    "& .MuiTextField-root": { m: 1, width: "35ch" },
+                    "& > :not(style)": { m: 1, width: "30ch" },
                   }}
                   noValidate
                   autoComplete="off"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  <div>
-                    <TextField
-                      id="outlined-multiline-static"
-                      label="e.g. I would like to visit Paris. I want to visit 
+                  <TextField
+                    id="outlined-multiline-static"
+                    label="e.g. I would like to visit Paris. I want to visit 
           the Eiffel Tower for sure and other classical buildings."
-                      multiline
-                      rows={7}
-                      defaultValue=""
-                    />
-                  </div>
+                    multiline
+                    rows={7}
+                    defaultValue=""
+                  />
                 </Box>
               </Grid>
             </Grid>
